@@ -1,0 +1,37 @@
+{
+    "name": "8novels-charactercount",
+    "displayName": "8novels-charactercount",
+    "description": "日本語の文字数をリアルタイムでカウントする、Visual Studio Codeの機能拡張です。 ",
+    "version": "0.0.1",
+    "publisher": "8amjp",
+    "engines": {
+        "vscode": "^1.22.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "icon": "images/icon.png",
+    "activationEvents": [
+        "onLanguage:markdown",
+        "onLanguage:plaintext"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/8amjp/8novels-charactercount.git"
+    },
+    "main": "./out/extension",
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "tslint": "^5.8.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
