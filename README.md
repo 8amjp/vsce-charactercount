@@ -16,7 +16,7 @@
 
 ## Install
 
-1. '8novels-charactercount-0.0.1.vsix' をダウンロードします。
+1. '8novels-charactercount-x.x.x.vsix' をダウンロードします。
 1. 「拡張機能」サイドバーを表示します。
 1. 「…」アイコンをクリックし、「VSIX からのインストール…」を選択します。
 1. ダウンロードした拡張機能を選択します。
