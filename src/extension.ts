@@ -1,11 +1,11 @@
 "use strict";
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-import {window, Disposable, ExtensionContext, StatusBarAlignment, StatusBarItem, TextDocument} from 'vscode';
+import { window, Disposable, ExtensionContext, StatusBarAlignment, StatusBarItem, TextDocument } from 'vscode';
 
 // this method is called when your extension is activated. activation is
 // controlled by the activation events defined in package.json
-export function activate(ctx: ExtensionContext) {
+export function activate(context: ExtensionContext) {
 
     // Use the console to output diagnostic information (console.log) and errors (console.error)
     // This line of code will only be executed once when your extension is activated
@@ -17,8 +17,8 @@ export function activate(ctx: ExtensionContext) {
 
     // add to a list of disposables which are disposed when this extension
     // is deactivated again.
-    ctx.subscriptions.push(controller);
-    ctx.subscriptions.push(characterCounter);
+    context.subscriptions.push(controller);
+    context.subscriptions.push(characterCounter);
 }
 
 export class CharacterCounter {

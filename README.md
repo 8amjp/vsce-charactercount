@@ -1,6 +1,6 @@
 8novels-charactercount
 ======================
- 
+
 文字数をリアルタイムでカウントする、Visual Studio Codeの拡張機能です。  
 マイクロソフトが公開している[サンプル](https://github.com/Microsoft/vscode-wordcount)をベースに作成しました。
 
