@@ -1,5 +1,5 @@
-8novels-charactercount
-======================
+VSCE - CharacterCount README
+============================
 
 文字数をリアルタイムでカウントする、Visual Studio Codeの拡張機能です。  
 マイクロソフトが公開している[サンプル](https://github.com/Microsoft/vscode-wordcount)をベースに作成しました。
@@ -16,7 +16,7 @@
 
 ## Install
 
-1. '8novels-charactercount-x.x.x.vsix' をダウンロードします。
+1. 'charactercount-x.x.x.vsix' をダウンロードします。
 1. 「拡張機能」サイドバーを表示します。
 1. 「…」アイコンをクリックし、「VSIX からのインストール…」を選択します。
 1. ダウンロードした拡張機能を選択します。
