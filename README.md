@@ -2,7 +2,8 @@ VSCE - CharacterCount README
 ============================
 
 文字数をリアルタイムでカウントする、Visual Studio Codeの拡張機能です。  
-マイクロソフトが公開している[サンプル](https://github.com/Microsoft/vscode-wordcount)をベースに作成しました。
+日本語で書かれたWeb小説の文字数カウントに適しています。  
+なお、マイクロソフトが公開している[サンプル](https://github.com/Microsoft/vscode-wordcount)をベースに作成しました。
 
 ## Usage
 
@@ -10,6 +11,6 @@ VSCE - CharacterCount README
 
 * すべての空白文字(全角/半角スペース、改行、タブ)
 * ルビ範囲指定記号(《》)とその中の文字
-* ルビ開始記号(「|」、「｜」) 
+* ルビ開始記号(「|」、「｜」)
 
 なお、文字数カウント機能が有効になるのは、Markdown形式またはプレーンテキスト形式のファイルを開いた時のみです。
