@@ -1,5 +1,5 @@
 "use strict";
-import { window, Disposable, ExtensionContext, StatusBarAlignment, StatusBarItem, TextDocument } from 'vscode';
+import { window, Disposable, ExtensionContext, StatusBarAlignment, StatusBarItem, TextDocument, workspace } from 'vscode';
 export function activate(context: ExtensionContext) {
     let characterCounter = new CharacterCounter();
     let controller = new CharacterCounterController(characterCounter);
@@ -22,8 +22,9 @@ export class CharacterCounter {
         let doc = editor.document;
 
         // Markdownとプレーンテキストの時だけカウント
-        if (doc.languageId === "markdown" || doc.languageId === "plaintext") {
-            let characterCount = this._getCharacterCount(doc);
+        let mylanguage = workspace.getConfiguration('charactercount').get('supporting.language');
+        if (doc.languageId === "markdown" || doc.languageId === "plaintext" || doc.languageId === mylanguage) {
+                let characterCount = this._getCharacterCount(doc);
             this._statusBarItem.text = `$(pencil) ${characterCount} 文字`;
             this._statusBarItem.show();
         } else {
