@@ -2,7 +2,7 @@
     "name": "charactercount",
     "displayName": "CharacterCount",
     "description": "文字数をリアルタイムでカウントする、Visual Studio Codeの機能拡張です。",
-    "version": "0.3.0",
+    "version": "0.3.another",
     "publisher": "8amjp",
     "engines": {
         "vscode": "^1.22.0"
@@ -18,6 +18,18 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/8amjp/vsce-charactercount.git"
+    },
+    "contributes": {
+        "configuration": {
+            "title": "文字数カウント設定",
+            "properties": {
+                "charactercount.supporting.language": {
+                    "type": "string",
+                    "default": "",
+                    "description": "対応する言語を指定してください"
+                }
+            }
+        }
     },
     "main": "./out/extension",
     "scripts": {
